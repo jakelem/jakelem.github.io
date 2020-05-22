@@ -92,7 +92,7 @@ class LSystem  {
   }
 
   advanceTurtle() {
-    let mesh = new Mesh('/geo/feather.obj', vec3.clone(this.currTurtle.position), vec3.fromValues(1,1,1), vec3.clone(this.currTurtle.orientation))
+    let mesh = new Mesh('./geo/feather.obj', vec3.clone(this.currTurtle.position), vec3.fromValues(1,1,1), vec3.clone(this.currTurtle.orientation))
     this.meshes.push(mesh);
 
     let rotMat = mat4.create();

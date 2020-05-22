@@ -119,7 +119,7 @@ class Orchids extends LSystem  {
     let sF = Math.exp(-this.currTurtle.depth * this.decay) * this.radius;
     let sStep = Math.exp(-this.currTurtle.depth * this.stepDecay) * this.height;
 
-    let mesh = new Mesh('/geo/stem.obj', vec3.clone(this.currTurtle.position), vec3.fromValues(sF,sStep,sF), 
+    let mesh = new Mesh('./geo/stem.obj', vec3.clone(this.currTurtle.position), vec3.fromValues(sF,sStep,sF), 
     vec3.clone(this.currTurtle.orientation), vec4.fromValues(0.29,0.17,0.11,1))
     this.meshes.push(mesh);
 
@@ -138,7 +138,7 @@ class Orchids extends LSystem  {
   }
 
   sproutBud() {
-    let mesh = new Mesh('/geo/orchid.obj', vec3.clone(this.currTurtle.position), vec3.fromValues(this.orchidSize, this.orchidSize, this.orchidSize), vec3.clone(this.currTurtle.orientation),
+    let mesh = new Mesh('./geo/orchid.obj', vec3.clone(this.currTurtle.position), vec3.fromValues(this.orchidSize, this.orchidSize, this.orchidSize), vec3.clone(this.currTurtle.orientation),
     vec4.fromValues(1,1,1,1))
     this.meshes.push(mesh);
 
@@ -147,7 +147,7 @@ class Orchids extends LSystem  {
   sproutLeaf() {
     let sF = Math.exp(-this.currTurtle.depth);
 
-    let mesh = new Mesh('/geo/leaf.obj', vec3.clone(this.currTurtle.position), vec3.fromValues(sF,1,sF), vec3.clone(this.currTurtle.orientation),
+    let mesh = new Mesh('./geo/leaf.obj', vec3.clone(this.currTurtle.position), vec3.fromValues(sF,1,sF), vec3.clone(this.currTurtle.orientation),
     vec4.fromValues(0.38,0.51,0.33,1))
     this.meshes.push(mesh);
 

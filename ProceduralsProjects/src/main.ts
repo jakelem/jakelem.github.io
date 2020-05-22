@@ -59,7 +59,7 @@ function loadScene() {
 
   icosphere = new Icosphere(vec3.fromValues(0, 0, 0), 1, controls.tesselations);
   //icosphere.create();
-  m_mesh = new Mesh('/geo/feather.obj',vec3.fromValues(0, 1, 0), vec3.fromValues(1, 1, 1), vec3.fromValues(98, 0, 0));
+  m_mesh = new Mesh('./geo/feather.obj',vec3.fromValues(0, 1, 0), vec3.fromValues(1, 1, 1), vec3.fromValues(98, 0, 0));
   //m_mesh.create();
   //m_mesh.center = vec4.fromValues(0, 1, 2, 1);
   square = new Square(vec3.fromValues(0, 0, 0));
