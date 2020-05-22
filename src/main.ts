@@ -85,7 +85,7 @@ function main() {
   gui.add(controls, 'Length Decay', -0.2, 2).step(0.01);
   gui.add(controls, 'Angle', 0, 20).step(0.01);
   gui.add(controls, 'Radius', 0.1, 4).step(0.01);
-  gui.add(controls, 'Height', 0.1, 4).step(0.01);
+  //gui.add(controls, 'Height', 0.1, 4).step(0.01);
   //gui.add(controls, 'Offset', -10, 10).step(0.01);
   gui.add(controls, 'Load Scene');
 
